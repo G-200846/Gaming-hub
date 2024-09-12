@@ -1,8 +1,116 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+/* Background styling for home page */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/backround\ image.jpeg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures full viewport height */
+    color: white; /* Changes text color to white to contrast the background */
+}
+
+/* Additional styling for header and other elements */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: translucent background for the header */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section#games {
+    padding: 2rem;
+    text-align: center;
+}
+
+.game-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+}
+
+.game-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.play-button {
+    background-color: #00C9FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background-color: #005f73;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -13,12 +121,12 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -27,38 +135,44 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+section#games {
     padding: 2rem;
     text-align: center;
 }
 
-.game-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.game-section {
+    margin-bottom: 2rem;
 }
 
-.game {
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    width: 200px;
-    text-align: center;
-    margin: 1rem;
+.game-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
 }
 
-.game img {
+.game-image {
     width: 100%;
-    height: auto;
-    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-footer {
-    background-color: #333;
+.play-button {
+    background-color: #00C9FF;
     color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
+
+.play-button:hover {
+    background-color: #005f73;
+}
+

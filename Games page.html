@@ -3,48 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games - Gaming Hub</title>
+    <title>Gaming Hub - Play Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>Our Games</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Games page.html">Games</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="gaming view.html">gaming View</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h1>Gaming Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gaming.html">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Games page.html">game-section</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section id="games">
-            <h2>Available Games</h2>
-            <div class="game-list">
-                <div class="game">
-                    <img src="assets/chess.jpeg" alt="Chess">
-                    <h3>Chess</h3>
-                </div>
-                <div class="game">
-                    <img src="assets/tik tack.jpeg" alt="Tic-Tac-Toe">
-                    <h3>Tic-Tac-Toe</h3>
-                </div>
-                <div class="game">
-                    <img src="assets/checkers.jpeg" alt="Checkers"> 
-                    <h3>Checkers</h3>
-                </div>
+    <section id="games">
+        <h2>Play Your Favorite Games</h2>
+        
+        <!-- Game 1 Section -->
+        <div class="game-section">
+            <h3>Adventure & Action Games</h3>
+            <div class="game-card">
+                <img src="assets/adventure.jpeg" alt="Adventure Game 1" class="game-image">
+                <h4>Adventure Quest</h4>
+                <p>Embark on an epic journey through mystical lands.</p>
+                <button class="play-button" onclick="playGame('adventure1.html')">Play</button>
             </div>
-        </section>
+            <div class="game-card">
+                <img src="assets/action hero.jpeg" alt="Action Game 1" class="game-image">
+                <h4>Action Hero</h4>
+                <p>Test your reflexes in this fast-paced action game.</p>
+                <button class="play-button" onclick="playGame('action1.html')">Play</button>
+            </div>
+            <div class="game-card">
+                <img src="assets/TreasureLand • Game Art & UI.jpeg" alt="Adventure Game 2" class="game-image">
+                <h4>Lost in the Jungle</h4>
+                <p>Explore the wilderness and survive the dangers of the jungle.</p>
+                <button class="play-button" onclick="playGame('adventure2.html')">Play</button>
+            </div>
+        </div>
 
-        <footer>
-            <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
-        </footer>
-    </div>
+        
+        <div class="game-section">
+            <h3>Strategy & Puzzle Games</h3>
+            <div class="game-card">
+                <img src="assets/kindom builder.jpeg" alt="Strategy Game 1" class="game-image">
+                <h4>Kingdom Builder</h4>
+                <p>Build your kingdom and outsmart your enemies.</p>
+                <button class="play-button" onclick="playGame('strategy1.html')">Play</button>
+            </div>
+            <div class="game-card">
+                <img src="assets/Puzzle Masters.jpeg" alt="Puzzle Game 1" class="game-image">
+                <h4>Puzzle Master</h4>
+                <p>Challenge yourself with mind-bending puzzles.</p>
+                <button class="play-button" onclick="playGame('puzzle1.html')">Play</button>
+            </div>
+            <div class="game-card">
+                <img src="assets/War Tactician.jpeg" alt="Strategy Game 2" class="game-image">
+                <h4>War Tactician</h4>
+                <p>Deploy your forces and conquer the battlefield.</p>
+                <button class="play-button" onclick="playGame('strategy2.html')">Play</button>
+            </div>
+        </div>
+    </section>
 
-    <script src="vue.js"></script>
-    <script src="app.js"></script>
+    <footer>
+        <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to handle the play button click
+        function playGame(gameUrl) {
+            window.location.href = gameUrl; // Redirect to the game's page
+        }
+    </script>
 </body>
 </html>
